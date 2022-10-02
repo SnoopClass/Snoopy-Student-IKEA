@@ -86,6 +86,13 @@ class SearchViewController: UIViewController {
             
             stackView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor)
         ])
+        
+        stackView.addArrangedSubviews(titleSectionView,
+                                      recentProductSectionView,
+                                      productCategorySectionView,
+                                      campaignSectionView,
+                                      popularProductSectionView,
+                                      informationSectionView)
     }
 
 }
