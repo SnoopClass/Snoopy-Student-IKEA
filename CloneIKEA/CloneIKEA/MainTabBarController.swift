@@ -19,7 +19,6 @@ class MainTabBarController: UITabBarController {
         let viewController = UIViewController()
         viewController.view.backgroundColor = .yellow
         viewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: nil)
-
         return viewController
     }()
     let myPageViewController: UIViewController = {
