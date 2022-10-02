@@ -11,7 +11,9 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setTabBar()
+    func setTabBar() {
+        tabBar.backgroundColor = .systemBackground
     }
 
 }
