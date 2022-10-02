@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainTabBarController.swift
 //  CloneIKEA
 //
 //  Created by 김수진 on 2022/10/02.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
-
 }
-
