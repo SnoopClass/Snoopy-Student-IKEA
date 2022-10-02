@@ -8,10 +8,54 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    
+    private var safeArea: UILayoutGuide {
+        get { self.view.safeAreaLayoutGuide }
+    }
+    private let scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+    private let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .equalSpacing
+        stackView.spacing = 20
+        return stackView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        render()
+    }
+    
+    func render() {
+        renderScrollView()
+        renderStackView()
+    }
+    
+    private func renderScrollView() {
+        view.addSubview(scrollView)
+        NSLayoutConstraint.activate([
+            scrollView.frameLayoutGuide.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            scrollView.frameLayoutGuide.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor),
+            scrollView.frameLayoutGuide.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor),
+            scrollView.frameLayoutGuide.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor),
+        ])
+    }
+    
+    private func renderStackView() {
+        scrollView.addSubview(stackView)
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
+            stackView.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
+            
+            stackView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor)
+        ])
     }
 
 }
