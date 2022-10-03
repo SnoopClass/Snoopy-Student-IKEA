@@ -16,6 +16,8 @@
 		0737EE4F28E9326C00E4057F /* CloneIKEATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE4E28E9326C00E4057F /* CloneIKEATests.swift */; };
 		0737EE5928E9326C00E4057F /* CloneIKEAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE5828E9326C00E4057F /* CloneIKEAUITests.swift */; };
 		0737EE5B28E9326C00E4057F /* CloneIKEAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE5A28E9326C00E4057F /* CloneIKEAUITestsLaunchTests.swift */; };
+		0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6928E96B1000E4057F /* SearchViewController.swift */; };
+		0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0737EE5428E9326C00E4057F /* CloneIKEAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloneIKEAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0737EE5828E9326C00E4057F /* CloneIKEAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneIKEAUITests.swift; sourceTree = "<group>"; };
 		0737EE5A28E9326C00E4057F /* CloneIKEAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneIKEAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0737EE6928E96B1000E4057F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				0737EE4028E9326C00E4057F /* Assets.xcassets */,
 				0737EE4228E9326C00E4057F /* LaunchScreen.storyboard */,
 				0737EE4528E9326C00E4057F /* Info.plist */,
+				0737EE6928E96B1000E4057F /* SearchViewController.swift */,
+				0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */,
 			);
 			path = CloneIKEA;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				0737EE3C28E9326B00E4057F /* ViewController.swift in Sources */,
 				0737EE3828E9326B00E4057F /* AppDelegate.swift in Sources */,
+				0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */,
+				0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */,
 				0737EE3A28E9326B00E4057F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
