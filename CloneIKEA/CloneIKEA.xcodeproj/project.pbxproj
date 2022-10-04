@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0716C59B28EC5EF0003D4071 /* TitleSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716C59A28EC5EF0003D4071 /* TitleSectionView.swift */; };
+		0716C59E28EC6543003D4071 /* SearchViewController+Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716C59D28EC6543003D4071 /* SearchViewController+Margin.swift */; };
 		0737EE3828E9326B00E4057F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE3728E9326B00E4057F /* AppDelegate.swift */; };
 		0737EE3A28E9326B00E4057F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE3928E9326B00E4057F /* SceneDelegate.swift */; };
 		0737EE3F28E9326B00E4057F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0737EE3D28E9326B00E4057F /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0716C59A28EC5EF0003D4071 /* TitleSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSectionView.swift; sourceTree = "<group>"; };
+		0716C59D28EC6543003D4071 /* SearchViewController+Margin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+Margin.swift"; sourceTree = "<group>"; };
 		0737EE3428E9326B00E4057F /* CloneIKEA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneIKEA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0737EE3728E9326B00E4057F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0737EE3928E9326B00E4057F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				0716C59228EC5AA4003D4071 /* Supporting Files */,
 				0716C59328EC5ABA003D4071 /* Extension */,
 				0716C59428EC5AE4003D4071 /* Resource */,
+				0716C59C28EC651F003D4071 /* Utils */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -160,6 +163,14 @@
 				0716C59A28EC5EF0003D4071 /* TitleSectionView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		0716C59C28EC651F003D4071 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0716C59D28EC6543003D4071 /* SearchViewController+Margin.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		0737EE2B28E9326B00E4057F = {
@@ -344,6 +355,7 @@
 				0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */,
 				0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */,
 				0737EE6828E944F400E4057F /* MainTabBarController.swift in Sources */,
+				0716C59E28EC6543003D4071 /* SearchViewController+Margin.swift in Sources */,
 				0737EE3A28E9326B00E4057F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
