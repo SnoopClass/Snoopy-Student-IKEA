@@ -25,8 +25,8 @@ class SearchViewController: UIViewController {
         stackView.spacing = 20
         return stackView
     }()
-    private let titleSectionView: UIView = {
-        let view = UIView()
+    private let titleSectionView: TitleSectionView = {
+        let view = TitleSectionView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
