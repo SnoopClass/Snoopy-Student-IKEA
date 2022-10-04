@@ -11,7 +11,7 @@ extension SearchViewController {
     
     class TitleSectionView: UIView {
         
-        lazy var titleLabel: UILabel = {
+        private lazy var titleLabel: UILabel = {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
             label.text = "검색"
@@ -19,8 +19,14 @@ extension SearchViewController {
             return label
         }()
         
-        override init(frame: CGRect) {
-            super.init(frame: frame)
+        private lazy var searchBar: SearchBar = {
+            let searchBar = SearchBar()
+            searchBar.translatesAutoresizingMaskIntoConstraints = false
+            return searchBar
+        }()
+        
+        init() {
+            super.init(frame: .zero)
             render()
         }
         
@@ -28,12 +34,48 @@ extension SearchViewController {
             fatalError("init(coder:) has not been implemented")
         }
         
-        func render() {
+        private func render() {
             addSubview(titleLabel)
             NSLayoutConstraint.activate([
                 titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: CGFloat(Margin.top)),
                 titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat(Margin.sectionTitleLeft)),
             ])
+            
+            addSubview(searchBar)
+            NSLayoutConstraint.activate([
+                searchBar.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: CGFloat(Margin.top)),
+                searchBar.bottomAnchor.constraint(equalTo: bottomAnchor, constant: CGFloat(Margin.bottom)),
+                searchBar.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat(Margin.sectionContentLeft)),
+                searchBar.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat(Margin.sectionContentRight)),
+            ])
+        }
+        
+    }
+
+    private class SearchBar: UIView {
+        
+        enum Size {
+            static let height = 50
+        }
+        
+        init() {
+            super.init(frame: .zero)
+            configureUI()
+            render()
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+        
+        private func configureUI() {
+            layer.cornerRadius = CGFloat(Size.height / 2)
+            layer.borderWidth = 1
+            layer.borderColor = UIColor.gray.cgColor
+        }
+        
+        private func render() {
+            self.heightAnchor.constraint(equalToConstant: CGFloat(Size.height)).isActive = true
         }
         
     }
