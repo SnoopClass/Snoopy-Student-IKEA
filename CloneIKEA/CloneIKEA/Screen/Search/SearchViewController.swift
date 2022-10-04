@@ -58,7 +58,12 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
         render()
+    }
+    
+    func configureUI() {
+        view.backgroundColor = .white
     }
     
     func render() {
