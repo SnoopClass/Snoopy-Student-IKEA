@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0737EE3828E9326B00E4057F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE3728E9326B00E4057F /* AppDelegate.swift */; };
 		0737EE3A28E9326B00E4057F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE3928E9326B00E4057F /* SceneDelegate.swift */; };
-		0737EE3C28E9326B00E4057F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE3B28E9326B00E4057F /* ViewController.swift */; };
 		0737EE3F28E9326B00E4057F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0737EE3D28E9326B00E4057F /* Main.storyboard */; };
 		0737EE4128E9326C00E4057F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0737EE4028E9326C00E4057F /* Assets.xcassets */; };
 		0737EE4428E9326C00E4057F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0737EE4228E9326C00E4057F /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		0737EE5B28E9326C00E4057F /* CloneIKEAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE5A28E9326C00E4057F /* CloneIKEAUITestsLaunchTests.swift */; };
 		0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6928E96B1000E4057F /* SearchViewController.swift */; };
 		0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */; };
+		0737EE6828E944F400E4057F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6728E944F400E4057F /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		0737EE3428E9326B00E4057F /* CloneIKEA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneIKEA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0737EE3728E9326B00E4057F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0737EE3928E9326B00E4057F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0737EE3B28E9326B00E4057F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0737EE3E28E9326B00E4057F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0737EE4028E9326C00E4057F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0737EE4328E9326C00E4057F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		0737EE5A28E9326C00E4057F /* CloneIKEAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneIKEAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0737EE6928E96B1000E4057F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		0737EE6728E944F400E4057F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +105,13 @@
 			children = (
 				0737EE3728E9326B00E4057F /* AppDelegate.swift */,
 				0737EE3928E9326B00E4057F /* SceneDelegate.swift */,
-				0737EE3B28E9326B00E4057F /* ViewController.swift */,
 				0737EE3D28E9326B00E4057F /* Main.storyboard */,
 				0737EE4028E9326C00E4057F /* Assets.xcassets */,
 				0737EE4228E9326C00E4057F /* LaunchScreen.storyboard */,
 				0737EE4528E9326C00E4057F /* Info.plist */,
 				0737EE6928E96B1000E4057F /* SearchViewController.swift */,
 				0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */,
+				0737EE6728E944F400E4057F /* MainTabBarController.swift */,
 			);
 			path = CloneIKEA;
 			sourceTree = "<group>";
@@ -264,10 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0737EE3C28E9326B00E4057F /* ViewController.swift in Sources */,
 				0737EE3828E9326B00E4057F /* AppDelegate.swift in Sources */,
 				0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */,
 				0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */,
+				0737EE6828E944F400E4057F /* MainTabBarController.swift in Sources */,
 				0737EE3A28E9326B00E4057F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
