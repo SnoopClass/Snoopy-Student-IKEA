@@ -11,13 +11,13 @@ class MainTabBarController: UITabBarController {
 
     let homeViewController: UIViewController = {
         let viewController = UIViewController()
-        viewController.view.backgroundColor = .white
+        viewController.view.backgroundColor = .yellow
         viewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: nil)
         return viewController
     }()
     let searchViewController: UIViewController = {
         let viewController = UIViewController()
-        viewController.view.backgroundColor = .yellow
+//        viewController.view.backgroundColor = .yellow
         viewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: nil)
         return viewController
     }()
