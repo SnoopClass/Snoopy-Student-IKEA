@@ -17,7 +17,6 @@ class MainTabBarController: UITabBarController {
     }()
     let searchViewController: UIViewController = {
         let viewController = UIViewController()
-//        viewController.view.backgroundColor = .yellow
         viewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: nil)
         return viewController
     }()
