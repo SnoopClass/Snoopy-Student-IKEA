@@ -15,8 +15,8 @@ class MainTabBarController: UITabBarController {
         viewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: nil)
         return viewController
     }()
-    let searchViewController: UIViewController = {
-        let viewController = UIViewController()
+    let searchViewController: SearchViewController = {
+        let viewController = SearchViewController()
         viewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: nil)
         return viewController
     }()
