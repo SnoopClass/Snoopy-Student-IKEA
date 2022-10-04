@@ -58,6 +58,14 @@ extension SearchViewController {
             static let height = 50
         }
         
+        private let searchTextField: UISearchTextField = {
+            let searchTextField = UISearchTextField()
+            searchTextField.translatesAutoresizingMaskIntoConstraints = false
+            searchTextField.borderStyle = .none
+            searchTextField.placeholder = "무엇을 찾고 있나요?"
+            return searchTextField
+        }()
+        
         init() {
             super.init(frame: .zero)
             configureUI()
@@ -76,6 +84,13 @@ extension SearchViewController {
         
         private func render() {
             self.heightAnchor.constraint(equalToConstant: CGFloat(Size.height)).isActive = true
+            
+            addSubview(searchTextField)
+            NSLayoutConstraint.activate([
+                searchTextField.centerYAnchor.constraint(equalTo: centerYAnchor),
+                searchTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat(Size.height / 2)-15),
+                searchTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -CGFloat(Size.height / 2)+15)
+            ])
         }
         
     }
