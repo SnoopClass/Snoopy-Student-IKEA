@@ -20,6 +20,7 @@
 		0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */; };
 		07B5ABDD28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5ABDC28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift */; };
 		07B5ABE028F5D82800E2E6B2 /* RecentProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5ABDF28F5D82800E2E6B2 /* RecentProductCollectionViewCell.swift */; };
+		07B5ABE228F5D88E00E2E6B2 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5ABE128F5D88E00E2E6B2 /* NSObject+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		07B5ABDC28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentProcuctCollectionView.swift; sourceTree = "<group>"; };
 		07B5ABDF28F5D82800E2E6B2 /* RecentProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		07B5ABE128F5D88E00E2E6B2 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */,
+				07B5ABE128F5D88E00E2E6B2 /* NSObject+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				0737EE3828E9326B00E4057F /* AppDelegate.swift in Sources */,
 				0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */,
 				07B5ABDD28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift in Sources */,
+				07B5ABE228F5D88E00E2E6B2 /* NSObject+Extension.swift in Sources */,
 				0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */,
 				07B5ABE028F5D82800E2E6B2 /* RecentProductCollectionViewCell.swift in Sources */,
 				0737EE6828E944F400E4057F /* MainTabBarController.swift in Sources */,
