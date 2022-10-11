@@ -18,6 +18,7 @@
 		0737EE6828E944F400E4057F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6728E944F400E4057F /* MainTabBarController.swift */; };
 		0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6928E96B1000E4057F /* SearchViewController.swift */; };
 		0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */; };
+		07B5ABDD28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5ABDC28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0737EE6728E944F400E4057F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0737EE6928E96B1000E4057F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0737EE6B28E9732E00E4057F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		07B5ABDC28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentProcuctCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		0716C59828EC5B29003D4071 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				07B5ABDB28F5D5EE00E2E6B2 /* Component */,
 				0737EE6928E96B1000E4057F /* SearchViewController.swift */,
 			);
 			path = Search;
@@ -195,6 +198,14 @@
 				0737EE5A28E9326C00E4057F /* CloneIKEAUITestsLaunchTests.swift */,
 			);
 			path = CloneIKEAUITests;
+			sourceTree = "<group>";
+		};
+		07B5ABDB28F5D5EE00E2E6B2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				07B5ABDC28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 			files = (
 				0737EE3828E9326B00E4057F /* AppDelegate.swift in Sources */,
 				0737EE6A28E96B1000E4057F /* SearchViewController.swift in Sources */,
+				07B5ABDD28F5D62B00E2E6B2 /* RecentProcuctCollectionView.swift in Sources */,
 				0737EE6C28E9732E00E4057F /* UIStackView+Extension.swift in Sources */,
 				0737EE6828E944F400E4057F /* MainTabBarController.swift in Sources */,
 				0737EE3A28E9326B00E4057F /* SceneDelegate.swift in Sources */,
